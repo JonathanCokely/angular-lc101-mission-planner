@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crew.component.css']
 })
 export class CrewComponent implements OnInit {
-  crew: string[] = ["Jessica Watkins", "Raja Chari", "Jasmin Moghbeli"];
+
+  crew: object[] = [
+    {name: "Eileen Collins", firstMission: false},
+    {name: "Mae Jemison", firstMission: false },
+    {name: "Ellen Ochoa", firstMission: true }
+  ];
+  
   constructor() { }
 
   ngOnInit() {
